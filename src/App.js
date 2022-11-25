@@ -18,7 +18,6 @@ function App() {
   )
   useEffect(() => {
     auth.onAuthStateChanged((authuser) => {
-      console.log(authuser)
       if (authuser) {
         dispatch({
           type: 'LOGIN_USER',
